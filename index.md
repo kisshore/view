@@ -5,9 +5,10 @@ You can use the [editor on GitHub](https://github.com/kisshore/view/edit/master/
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
-
-{{ site.data.cluster1 }}
-
+<h1> Bing </h1>
+{% for x in site.data.cluster1 %}
+{{ x.node }}
+{% endfor %}
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
