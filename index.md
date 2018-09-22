@@ -6,9 +6,25 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Markdown
 <h1> Bing </h1>
+<table>
+  <th>
+    <tr>
+      <td> Node </td>
+      <td> CPU Requests </td>
+      <td> CPU Limits </td>
+    </tr>
+  </th>
+     
 {% for x in site.data.cluster1 %}
-{{ x.node }}
+<tr>
+  <td> {{ x.node }} </td>
+  <td> {{ x.cpu_requests	}} </td>
+  <td> {{ x.cpu_limits	}} </td>
+</tr>
+
 {% endfor %}
+  
+</table> 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
